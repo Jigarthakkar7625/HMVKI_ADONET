@@ -9,19 +9,24 @@
 <div style="max-width: 400px;">
         <h2 class="form-signin-heading">Registration</h2>
         <asp:Label Text="Username" runat="server" AssociatedControlID="txtUsername"/>
-        <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Enter Username" required="required"/>
+        <asp:TextBox ID="txtUsername" runat="server" CssClass="form-control" placeholder="Enter Username"/>
         <br/>
         <asp:Label Text="Password" runat="server" AssociatedControlID="txtPassword"/>
         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" ToolTip="Password must contain: Minimum 8 characters at-least 1 Alphabet and 1 Number"
-            CssClass="form-control" placeholder="Enter Password" required="required"/>
+            CssClass="form-control" placeholder="Enter Password" />
         <br/>
         <asp:Label Text="Confirm Password" runat="server" AssociatedControlID="txtConfirmPassword"/>
-        <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Confirm Password" required="required"/>
+        <asp:TextBox ID="txtConfirmPassword" runat="server" TextMode="Password" CssClass="form-control" placeholder="Confirm Password" />
         <br/>
         <asp:Label Text="Email" runat="server" AssociatedControlID="txtEmail"/>
-        <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" placeholder="Enter Email" required="required" />
+        <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" CssClass="form-control" placeholder="Enter Email"  />
         <hr/>
+    <asp:HiddenField ID="HiddenField1" runat="server" />
+
         <asp:Button ID="btnSignup" runat="server" Text="Sign up" CssClass="btn btn-primary" OnClick="btnSignup_Click"/>
+        <asp:Button ID="btnSignup0" runat="server" Text="btnSignup0" CssClass="btn btn-primary" OnClick="btnSignup0_Click" />
+
+
     </div>
 
 </asp:Content>
